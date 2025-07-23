@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form element</title>
+    <style>
+        li {
+            list-style-type: none;
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <h1>Create an account</h1>
+        <form>
+            <fieldset>
+                <caption>Account creation</caption>
+                <ul>
+                    <li>
+                        <label for="username">Username:</label>
+                        <input type="text" id="username" name="user">
+                    </li>
+                    <li>
+                        <label for="password">Password:</label>
+                        <input type="text" for="password" name="password">
+                    </li>
+                    <li>
+                        <label for="confirm-password">Confirm Password</label>
+                        <input type="text" id="confirm-password" name="confirm-password">
+                    </li>
+                    <li>
+                        <label for=""></label>
+                        <input type="text">
+                    </li>
+                    <li>
+                        <label for=""></label>
+                        <input type="text">
+                    </li>
+
+                    <!-- Input for sending a message -->
+                    
+                        <label for="text-area">Send Message</label><br>
+                        <textarea type="text-area" id="text-area" name="text-area" cols="30" rows="20"
+                            placeholder="Enter a message to send"></textarea>
+
+                    <!-- accepting a file -->
+                    <li>
+                        <label for="receive-file">Upload File</label>
+                        <input type="file" id="receive-file" name="receive-file" accept="image/*" multiple>
+                    </li>
+
+                </ul>
+
+
+
+            </fieldset>
+        </form>
+        <!-- Exploring Selection, Options and Option Group -->
+        <select name="cars" id="cars">
+            <optgroup label="Expensive">
+                <option value="lamborghini">Lamborghini</option>
+                <option value="rolls royce">Rolls Royce</option>
+            </optgroup>
+            <optgroup label="Cheap">
+                <option value="g-wagon">G-Wagon</option>
+                <option value="camry">Camry</option>
+            </optgroup>
+        </select>
+    </main>
+</body>
+
+</html>
